@@ -1,0 +1,134 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A little something</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <h1 class="main-title">I want to hear you...</h1>
+
+    <p class="intro">
+        Choose one.
+    </p>
+
+
+    <!-- =========================
+         FIRST RECORDING
+    ========================== -->
+
+    <section class="record-card">
+
+        <div class="emoji">🎙️</div>
+
+        <h2>Say something</h2>
+
+        <p>
+            Say anything you want.<br>
+            But keep talking for at least 30 seconds.
+        </p>
+
+        <div class="wave-box">
+            <canvas id="wave1"></canvas>
+        </div>
+
+        <div class="timer" id="timer1">
+            00:00
+        </div>
+
+        <button
+            class="record-button"
+            id="button1"
+            onclick="toggleRecording(1)"
+        >
+            <span id="buttonText1">Start recording</span>
+        </button>
+
+        <p class="message" id="message1"></p>
+
+
+        <!-- PHOTO AFTER FIRST RECORDING -->
+
+        <div class="result" id="result1">
+
+            <img
+                src="song33.jpg"
+                alt="song"
+            >
+
+            <p class="result-text">
+                This is how my dearest person sounds like.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SECOND RECORDING
+    ========================== -->
+
+    <section class="record-card">
+
+        <div class="emoji">🐮</div>
+
+        <h2>Say "mooo"</h2>
+
+        <p>
+            Say mooo as long as you can.
+        </p>
+
+        <div class="wave-box">
+            <canvas id="wave2"></canvas>
+        </div>
+
+        <div class="timer" id="timer2">
+            00:00
+        </div>
+
+        <button
+            class="record-button"
+            id="button2"
+            onclick="toggleRecording(2)"
+        >
+            <span id="buttonText2">Start recording</span>
+        </button>
+
+        <p class="message" id="message2"></p>
+
+
+        <!-- PHOTO AFTER SECOND RECORDING -->
+
+        <div class="result" id="result2">
+
+            <img
+                src="mooo.jpeg"
+                alt="mooo"
+            >
+
+            <p class="result-text">
+                And this is how my favorite cow sounds like. 🐮
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
